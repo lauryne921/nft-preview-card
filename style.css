@@ -1,0 +1,184 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%); 
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%); 
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main-bg);
+    margin: auto;
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    top: 0rem;
+    left: 0rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.nft-preview {
+    background-color: var(--very-dark-blue-card-bg);
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 35%;
+    right: 25%;
+    border-radius: 1.2501rem;
+    height: auto;
+    width: 21.8754rem;
+    padding-bottom: 1.8747rem;
+}
+
+.global-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+p {
+    font-size: 1.125rem;
+    color: var(--soft-blue);
+}
+
+h2 {
+    color: white;
+    font-size: 1.5624rem;
+}
+
+h2:hover {
+    color: var(--cyan);
+}
+
+.upper {
+    background-image: url(image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: 18.749rem;
+    margin: 1.8747rem 1.8747rem 0.624rem 1.8747rem;
+    border-radius: 10px;
+}
+
+.upper:hover {
+    background-color: var(--cyan);
+    transition: 0.5s ease;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div-time p {
+    margin-left: 0.9375rem;
+}
+
+.div-ethereum {
+    display: inline-flex;
+    grid-area: 1, 1, 2, 2;
+}
+
+.ethereum {
+    width: 0.9rem;
+    height: 1.8rem;
+    margin-top: 0.675rem;
+}
+
+.div-ethereum p {
+    margin-left: 0.5625rem;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.div-time {
+    display: inline-flex;
+    grid-area: 1, 2, 2, 3;
+}
+
+.div-time p {
+    margin-left: 4.375rem;
+}
+.icon-clock {
+    margin-top: 0.9rem;
+}
+
+.icon-clock {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: -2.7rem;
+}
+
+.div-text {
+    padding-left: 1.8747rem;
+    padding-right: 1.8747rem;
+}
+
+.div-ligne {
+    height: 0.09rem;
+    margin: 0rem 1.8747rem 1.8747rem 1.8747rem;
+    background-color: var(--very-dark-blue-line);
+}
+
+.div-avatar {
+    padding: 0rem 1.8747rem 1.8747rem 1.8747rem;
+    display: inline-flex;
+}
+
+.image-avatar {
+    width: auto;
+    height: 2.7rem;
+}
+
+.jules:hover {
+    color: var(--cyan);
+}
+
+
+@media screen and (max-width: 830px) {
+    .nft-preview {
+        border-radius: 4vw;
+        height: 150vw;
+        width: 80vw;
+        padding-bottom: 2.083vw;
+        left: 10%;
+        top: 5%
+    }
+    
+    p {
+        font-size: 4vw;
+    }
+    
+    h2 {
+        font-size: 6vw;
+    }
+    
+    .upper {
+        background-size: 100%;
+        height: 100%;
+        border-radius: 0.208vw;
+    }
+
+    .lower {
+      margin-top: -2vw;
+    }
+
+    .div-time p {
+      margin-left: 13vw;
+    }
+    
+    .icon-clock {
+        width: 5vw;
+        height: 5vw
+    }
+    
+    .image-avatar {
+        width: auto;
+        height: 8vw;
+    }
+
+    .div-avatar p {
+      margin-top: -1vw;
+      margin-left: 2vw;;
+    }
+}
